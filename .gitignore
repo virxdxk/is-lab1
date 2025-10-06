@@ -5,6 +5,7 @@ back
 
 # ide
 .idea
+backend/.idea
 *.iml
 .vscode/
 
