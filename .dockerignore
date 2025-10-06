@@ -1,0 +1,16 @@
+.git
+.gitignore
+.gradle
+build/reports
+build/tmp
+build/classes
+build/generated
+build/test-results
+build/distributions
+build/bootScripts
+build/scripts
+out
+**/.idea
+**/.vscode
+**/node_modules
+*.iml
