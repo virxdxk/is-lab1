@@ -1,0 +1,14 @@
+# gradle
+backend/.gradle
+backend/build
+back
+
+# ide
+.idea
+*.iml
+.vscode/
+
+# env files
+.env
+*.local
+*.secret
