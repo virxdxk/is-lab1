@@ -10,9 +10,11 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.glassfish.jersey.containers:jersey-container-servlet:3.1.3")
+    implementation("org.glassfish.jersey.core:jersey-server:3.1.3")
+    implementation("org.glassfish.jersey.inject:jersey-hk2:3.1.3")
+    implementation("jakarta.persistence:jakarta.persistence-api:3.1.0")
 
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation(libs.junit.jupiter)
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     implementation(libs.guava)

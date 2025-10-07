@@ -1,14 +1,8 @@
-/*
- * Spring Boot Application
- */
 package itmo.is;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import jakarta.ws.rs.ApplicationPath;
+import jakarta.ws.rs.core.Application;
 
-@SpringBootApplication
-public class App {
-    public static void main(String[] args) {
-        SpringApplication.run(App.class, args);
-    }
+@ApplicationPath("/api")
+public class App extends Application {
 }
