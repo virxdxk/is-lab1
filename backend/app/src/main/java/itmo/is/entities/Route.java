@@ -1,7 +1,7 @@
 package itmo.is.entities;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.*;
 
 import java.util.Date;
 
@@ -13,6 +13,7 @@ public class Route {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "Name is required")
     @Column(name = "name", nullable = false)
     private String name;
 
