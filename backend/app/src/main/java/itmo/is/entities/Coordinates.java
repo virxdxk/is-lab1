@@ -2,8 +2,13 @@ package itmo.is.entities;
 
 import jakarta.persistence.Embeddable;
 import jakarta.validation.constraints.Max;
+import lombok.*;
 
 @Embeddable
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Coordinates {
     private float x;
 

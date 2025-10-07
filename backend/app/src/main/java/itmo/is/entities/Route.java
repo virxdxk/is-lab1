@@ -9,6 +9,8 @@ import java.util.Date;
 
 @Entity
 @Getter @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "routes")
 public class Route {
 
@@ -20,23 +22,19 @@ public class Route {
     @Column(name = "name", nullable = false)
     private String name;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "coordinates_id", referencedColumnName = "id")
-    @Column(name = "coordinates", nullable = false)
+    @Embedded
     private Coordinates coordinates;
 
     @Column(name = "creation_date", nullable = false, updatable = false)
     @Temporal(TemporalType.TIMESTAMP)
     private Date creationDate;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "from_id", referencedColumnName = "id")
-    @Column(name = "from", nullable = true)
     private Location from;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "to_id", referencedColumnName = "id")
-    @Column(name = "to", nullable = true)
     private Location to;
 
     @Min(1)
