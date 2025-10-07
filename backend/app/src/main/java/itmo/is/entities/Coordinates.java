@@ -1,20 +1,12 @@
 package itmo.is.entities;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Embeddable;
 import jakarta.validation.constraints.Max;
 
-@Entity
-@Table(name = "coordinates")
+@Embeddable
 public class Coordinates {
-    
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private float x;
 
-    @Column(name = "x")
-    private Float x;
-
-    @Max(49)
-    @Column(name = "y")
-    private Double y;
+    @Max(value = 49, message = "Y must be less than 49")
+    private double y;
 }

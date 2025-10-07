@@ -1,11 +1,14 @@
 package itmo.is.entities;
 
+import lombok.*;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 
 import java.util.Date;
 
+
 @Entity
+@Getter @Setter
 @Table(name = "routes")
 public class Route {
 
