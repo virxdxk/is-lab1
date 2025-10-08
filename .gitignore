@@ -13,3 +13,27 @@ backend/.idea
 .env
 *.local
 *.secret
+
+# frontend
+frontend/node_modules
+frontend/dist
+frontend/.vscode
+frontend/.idea
+frontend/package-lock.json
+frontend/package.json
+frontend/tsconfig.json
+frontend/tsconfig.app.json
+frontend/tsconfig.spec.json
+frontend/tsconfig.app.json
+
+# Logs
+frontend/logs
+frontend/*.log
+
+# Editor directories and files
+frontend/.vscode
+frontend/*.suo
+frontend/*.ntvs
+frontend/*.njsproj
+frontend/*.sln
+frontend/*.sw?
