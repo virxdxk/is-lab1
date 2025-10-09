@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import type { Location, RouteDto } from "@/domain";
-import { LocationSelector } from "@/components/location-selector";
+import { LocationSelector } from "@/components";
 import styles from "./RoutePage.module.css";
 
 export default function RoutePage() {

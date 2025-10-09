@@ -1,4 +1,4 @@
-import { RouteTable } from "@/components/route-table";
+import { Header, RouteTable } from "@/components";
 import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
@@ -11,6 +11,7 @@ export default function HomePage() {
 
     return (
         <div style={{ padding: '20px', position: 'relative', zIndex: 1 }}>
+            <Header />
             <button
                 onClick={handleAddRoute}
                 style={{
