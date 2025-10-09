@@ -1,7 +1,9 @@
+import { RouteTable } from "@/components/route-table";
+
 export default function Home() {
     return (
         <div>
-            <h1>home nahui</h1>
+            <RouteTable routes={[]} />
         </div>
     )
 }
