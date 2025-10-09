@@ -1,5 +1,5 @@
 import React from 'react';
-import type { RouteDto } from '../../domain/route/dto';
+import type { RouteDto } from '@/domain';
 import styles from './RouteTable.module.css';
 
 const RouteTable: React.FC<{ routes: RouteDto[] }> = ({ routes }) => {
