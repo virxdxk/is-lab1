@@ -1,0 +1,155 @@
+.locationSelector {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.locationSelectorTrigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    min-height: 20px;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.2s ease;
+}
+
+.locationSelectorTrigger:hover {
+    border-color: #999;
+}
+
+.locationSelectorTrigger:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.arrow {
+    font-size: 12px;
+    color: #666;
+    transition: transform 0.2s ease;
+}
+
+.locationSelectorDropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.locationList {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.locationItem {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+.locationItem:hover {
+    background-color: #f8f9fa;
+}
+
+.locationItem:last-child {
+    border-bottom: none;
+}
+
+.locationActions {
+    border-top: 1px solid #eee;
+    padding: 8px;
+}
+
+.createNewBtn {
+    width: 100%;
+    padding: 6px 8px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.2s ease;
+}
+
+.createNewBtn:hover {
+    background: #0056b3;
+}
+
+.createLocationForm {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.createLocationForm input {
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+}
+
+.createLocationForm input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.formActions {
+    display: flex;
+    gap: 6px;
+}
+
+.formActions button {
+    flex: 1;
+    padding: 4px 6px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.2s ease;
+}
+
+.formActions button:first-child {
+    background: #28a745;
+    color: white;
+}
+
+.formActions button:first-child:hover {
+    background: #1e7e34;
+}
+
+.formActions button:last-child {
+    background: #6c757d;
+    color: white;
+}
+
+.formActions button:last-child:hover {
+    background: #545b62;
+}
+
+.loading {
+    padding: 10px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}

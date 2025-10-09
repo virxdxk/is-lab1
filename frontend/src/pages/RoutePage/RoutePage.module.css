@@ -1,0 +1,70 @@
+.routePage {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.form input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background: white;
+    transition: border-color 0.2s ease;
+}
+
+.form input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.form input::placeholder {
+    color: #999;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.createButton {
+    background: #007bff;
+    color: white;
+}
+
+.createButton:hover {
+    background: #0056b3;
+}
+
+.cancelButton {
+    background: #6c757d;
+    color: white;
+}
+
+.cancelButton:hover {
+    background: #545b62;
+}
