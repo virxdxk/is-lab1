@@ -25,6 +25,7 @@ frontend/tsconfig.json
 frontend/tsconfig.app.json
 frontend/tsconfig.spec.json
 frontend/tsconfig.app.json
+frontend/.vite/
 
 # Logs
 frontend/logs
