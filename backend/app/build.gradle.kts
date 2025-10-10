@@ -17,6 +17,8 @@ dependencies {
     implementation("jakarta.persistence:jakarta.persistence-api:3.1.0")
     implementation("jakarta.ejb:jakarta.ejb-api:4.0.1")
     implementation("org.projectlombok:lombok:1.18.36")
+    implementation("org.flywaydb:flyway-core:9.22.3")
+    implementation("org.postgresql:postgresql:42.7.1")
     annotationProcessor("org.projectlombok:lombok:1.18.36")
 
     testImplementation("org.junit.jupiter:junit-jupiter:5.10.1")
@@ -25,6 +27,7 @@ dependencies {
     testImplementation("org.mockito:mockito-junit-jupiter:5.8.0")
     testImplementation("org.hibernate.validator:hibernate-validator:8.0.1.Final")
     testImplementation("org.glassfish:jakarta.el:4.0.2")
+    testImplementation("com.h2database:h2:2.2.224")
     implementation(libs.guava)
 }
 
