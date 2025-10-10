@@ -1,5 +1,3 @@
--- H2 совместимая версия миграции
--- Сначала создаем таблицу locations
 CREATE TABLE locations (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     x BIGINT,
@@ -7,7 +5,6 @@ CREATE TABLE locations (
     name VARCHAR(255) NOT NULL
 );
 
--- Затем создаем таблицу routes с координатами как embedded
 CREATE TABLE routes (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -22,6 +19,5 @@ CREATE TABLE routes (
     FOREIGN KEY (to_id) REFERENCES locations(id)
 );
 
--- Создаем индексы
 CREATE INDEX idx_route_from_location_id ON routes (from_id);
 CREATE INDEX idx_route_to_location_id ON routes (to_id);

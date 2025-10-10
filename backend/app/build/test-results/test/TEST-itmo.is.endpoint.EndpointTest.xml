@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="itmo.is.endpoint.EndpointTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-10-10T22:02:48.402Z" hostname="MacBook-Pro-Konstantin.local" time="0.005">
+  <properties/>
+  <testcase name="testCORSHeaders()" classname="itmo.is.endpoint.EndpointTest" time="0.001"/>
+  <testcase name="testRouteDataValidation()" classname="itmo.is.endpoint.EndpointTest" time="0.0"/>
+  <testcase name="testResponseCodes()" classname="itmo.is.endpoint.EndpointTest" time="0.0"/>
+  <testcase name="testLocationDataValidation()" classname="itmo.is.endpoint.EndpointTest" time="0.0"/>
+  <testcase name="testContentTypeHeaders()" classname="itmo.is.endpoint.EndpointTest" time="0.0"/>
+  <testcase name="testRouteEndpoints()" classname="itmo.is.endpoint.EndpointTest" time="0.001"/>
+  <testcase name="testErrorHandling()" classname="itmo.is.endpoint.EndpointTest" time="0.0"/>
+  <testcase name="testLocationEndpoints()" classname="itmo.is.endpoint.EndpointTest" time="0.0"/>
+  <system-out><![CDATA[Testing CORS headers:
+Access-Control-Allow-Origin should be set
+Access-Control-Allow-Methods should include GET, POST, PUT, DELETE
+Access-Control-Allow-Headers should include Content-Type
+POST /api/routes with valid data - OK
+Testing expected HTTP response codes:
+GET /api/locations - 200 OK
+GET /api/locations/1 - 200 OK
+GET /api/locations/999 - 404 Not Found
+POST /api/locations - 200 OK (valid data)
+POST /api/locations - 400 Bad Request (invalid data)
+PUT /api/locations/1 - 200 OK
+DELETE /api/locations/1 - 200 OK
+DELETE /api/locations/999 - 404 Not Found
+POST /api/locations with valid data - OK
+Testing Content-Type headers:
+All endpoints should accept: application/json
+All endpoints should produce: application/json
+GET /api/routes - OK
+GET /api/routes/1 - OK
+POST /api/routes - OK
+PUT /api/routes/1 - OK
+DELETE /api/routes/1 - OK
+GET /api/locations/999 - Should return 404
+GET /api/routes/999 - Should return 404
+POST /api/locations with empty name - Should return 400
+POST /api/routes with negative rating - Should return 400
+GET /api/locations - OK
+GET /api/locations/1 - OK
+POST /api/locations - OK
+PUT /api/locations/1 - OK
+DELETE /api/locations/1 - OK
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

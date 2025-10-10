@@ -3,10 +3,10 @@ package itmo.is.service;
 import itmo.is.dao.LocationDAO;
 import itmo.is.entities.Location;
 import jakarta.inject.Inject;
-import jakarta.ejb.Stateless;
+import jakarta.inject.Singleton;
 import java.util.List;
 
-@Stateless
+@Singleton
 public class LocationService {
     @Inject
     private LocationDAO locationDAO;

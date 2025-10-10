@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Simple Migration Tests" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-10-10T21:50:38.402Z" hostname="MacBook-Pro-Konstantin.local" time="0.015">
+<testsuite name="Simple Migration Tests" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-10-10T22:02:47.941Z" hostname="MacBook-Pro-Konstantin.local" time="0.014">
   <properties/>
-  <testcase name="Should enforce coordinate_y constraint" classname="itmo.is.SimpleMigrationTest" time="0.004"/>
-  <testcase name="Should insert and query data successfully" classname="itmo.is.SimpleMigrationTest" time="0.005"/>
-  <testcase name="Should execute H2 migration without errors" classname="itmo.is.SimpleMigrationTest" time="0.003"/>
-  <testcase name="Should execute PostgreSQL migration without errors" classname="itmo.is.SimpleMigrationTest" time="0.003"/>
+  <testcase name="Should enforce coordinate_y constraint" classname="itmo.is.SimpleMigrationTest" time="0.003"/>
+  <testcase name="Should insert and query data successfully" classname="itmo.is.SimpleMigrationTest" time="0.004"/>
+  <testcase name="Should execute H2 migration without errors" classname="itmo.is.SimpleMigrationTest" time="0.004"/>
+  <testcase name="Should execute PostgreSQL migration without errors" classname="itmo.is.SimpleMigrationTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

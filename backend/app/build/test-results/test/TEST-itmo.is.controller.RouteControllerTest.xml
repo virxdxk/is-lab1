@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="itmo.is.controller.RouteControllerTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2025-10-10T22:02:48.381Z" hostname="MacBook-Pro-Konstantin.local" time="0.021">
+  <properties/>
+  <testcase name="testGetRouteById_Success()" classname="itmo.is.controller.RouteControllerTest" time="0.01"/>
+  <testcase name="testDeleteRoute_Success()" classname="itmo.is.controller.RouteControllerTest" time="0.001"/>
+  <testcase name="testUpdateRoute_Success()" classname="itmo.is.controller.RouteControllerTest" time="0.001"/>
+  <testcase name="testGetRouteById_NotFound()" classname="itmo.is.controller.RouteControllerTest" time="0.001"/>
+  <testcase name="testCreateRouteWithInvalidDistance()" classname="itmo.is.controller.RouteControllerTest" time="0.001"/>
+  <testcase name="testCreateRoute_BadRequest()" classname="itmo.is.controller.RouteControllerTest" time="0.001"/>
+  <testcase name="testCreateRouteWithValidation()" classname="itmo.is.controller.RouteControllerTest" time="0.001"/>
+  <testcase name="testGetAllRoutes()" classname="itmo.is.controller.RouteControllerTest" time="0.001"/>
+  <testcase name="testDeleteRoute_NotFound()" classname="itmo.is.controller.RouteControllerTest" time="0.001"/>
+  <testcase name="testCreateRoute_Success()" classname="itmo.is.controller.RouteControllerTest" time="0.001"/>
+  <testcase name="testUpdateRoute_BadRequest()" classname="itmo.is.controller.RouteControllerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

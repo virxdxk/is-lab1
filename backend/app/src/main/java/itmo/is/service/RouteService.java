@@ -3,11 +3,11 @@ package itmo.is.service;
 import itmo.is.entities.Route;
 import itmo.is.dao.RouteDAO;
 import jakarta.inject.Inject;
-import jakarta.ejb.Stateless;
+import jakarta.inject.Singleton;
 import java.util.List;
 import java.util.Date;
 
-@Stateless
+@Singleton
 public class RouteService {
 
     @Inject

@@ -1,7 +1,5 @@
-# runtime stage
-FROM eclipse-temurin:17-jre
-WORKDIR /app
-COPY app/build/libs/*.jar /app/app.jar
-ENV JAVA_OPTS=""
+FROM tomcat:10.1-jdk17-openjdk
+WORKDIR /usr/local/tomcat/webapps
+COPY app/build/libs/app.war /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8080
-ENTRYPOINT ["sh","-c","java $JAVA_OPTS -jar /app/app.jar"]
+CMD ["catalina.sh", "run"]

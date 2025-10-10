@@ -1,12 +1,12 @@
 package itmo.is.dao;
 
 import itmo.is.entities.Location;
-import jakarta.ejb.Stateless;
+import jakarta.inject.Singleton;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import java.util.List;
 
-@Stateless
+@Singleton
 public class LocationDAO {
     @PersistenceContext
     private EntityManager em;

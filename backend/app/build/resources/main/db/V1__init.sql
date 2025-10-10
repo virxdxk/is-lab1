@@ -1,4 +1,3 @@
--- Сначала создаем таблицу locations
 create table locations (
     id serial primary key,
     x bigint,
@@ -6,7 +5,6 @@ create table locations (
     name varchar(255) not null
 );
 
--- Затем создаем таблицу routes с координатами как embedded
 create table routes (
     id serial primary key,
     name varchar(255) not null,

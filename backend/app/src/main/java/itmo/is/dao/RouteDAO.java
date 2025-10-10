@@ -1,11 +1,11 @@
 package itmo.is.dao;
 
 import itmo.is.entities.Route;
-import jakarta.ejb.Stateless;
+import jakarta.inject.Singleton;
 import jakarta.persistence.*;
 import java.util.List;
 
-@Stateless
+@Singleton
 public class RouteDAO {
     
     @PersistenceContext
