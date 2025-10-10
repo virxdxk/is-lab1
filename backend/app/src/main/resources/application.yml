@@ -1,7 +1,19 @@
 spring:
   autoconfigure:
     exclude:
-      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
-      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration  # оставляем только это
+  datasource:
+    url: jdbc:postgresql://localhost:5432/yourdb
+    username: youruser
+    password: yourpass
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+  jpa:
+    database-platform: org.eclipse.persistence.platform.database.PostgreSQLPlatform
+    properties:
+      eclipselink.weaving: false
+      eclipselink.logging.level: INFO
+
   main:
     web-application-type: servlet
