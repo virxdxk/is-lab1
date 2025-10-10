@@ -12,6 +12,8 @@ public class App extends Application {
         Set<Class<?>> classes = new HashSet<>();
         classes.add(itmo.is.controller.RouteController.class);
         classes.add(itmo.is.controller.LocationController.class);
+        classes.add(itmo.is.CorsFilter.class);
+        classes.add(itmo.is.CorsRequestFilter.class);
         return classes;
     }
     

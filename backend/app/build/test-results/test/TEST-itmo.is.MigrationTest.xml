@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Migration Tests" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-10-10T22:02:47.843Z" hostname="MacBook-Pro-Konstantin.local" time="0.097">
+<testsuite name="Migration Tests" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-10-10T22:27:14.808Z" hostname="MacBook-Pro-Konstantin.local" time="0.094">
   <properties/>
-  <testcase name="Should enforce coordinate_y constraint" classname="itmo.is.MigrationTest" time="0.081"/>
+  <testcase name="Should enforce coordinate_y constraint" classname="itmo.is.MigrationTest" time="0.078"/>
   <testcase name="Should create indexes according to migration" classname="itmo.is.MigrationTest" time="0.008"/>
-  <testcase name="Should enforce foreign key constraints" classname="itmo.is.MigrationTest" time="0.005"/>
+  <testcase name="Should enforce foreign key constraints" classname="itmo.is.MigrationTest" time="0.004"/>
   <testcase name="Should create tables according to migration" classname="itmo.is.MigrationTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

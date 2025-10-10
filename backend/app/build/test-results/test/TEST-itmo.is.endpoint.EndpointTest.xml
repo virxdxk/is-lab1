@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="itmo.is.endpoint.EndpointTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-10-10T22:02:48.402Z" hostname="MacBook-Pro-Konstantin.local" time="0.005">
+<testsuite name="itmo.is.endpoint.EndpointTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-10-10T22:27:15.367Z" hostname="MacBook-Pro-Konstantin.local" time="0.006">
   <properties/>
-  <testcase name="testCORSHeaders()" classname="itmo.is.endpoint.EndpointTest" time="0.001"/>
+  <testcase name="testCORSHeaders()" classname="itmo.is.endpoint.EndpointTest" time="0.002"/>
   <testcase name="testRouteDataValidation()" classname="itmo.is.endpoint.EndpointTest" time="0.0"/>
-  <testcase name="testResponseCodes()" classname="itmo.is.endpoint.EndpointTest" time="0.0"/>
+  <testcase name="testResponseCodes()" classname="itmo.is.endpoint.EndpointTest" time="0.001"/>
   <testcase name="testLocationDataValidation()" classname="itmo.is.endpoint.EndpointTest" time="0.0"/>
-  <testcase name="testContentTypeHeaders()" classname="itmo.is.endpoint.EndpointTest" time="0.0"/>
-  <testcase name="testRouteEndpoints()" classname="itmo.is.endpoint.EndpointTest" time="0.001"/>
-  <testcase name="testErrorHandling()" classname="itmo.is.endpoint.EndpointTest" time="0.0"/>
-  <testcase name="testLocationEndpoints()" classname="itmo.is.endpoint.EndpointTest" time="0.0"/>
+  <testcase name="testContentTypeHeaders()" classname="itmo.is.endpoint.EndpointTest" time="0.001"/>
+  <testcase name="testRouteEndpoints()" classname="itmo.is.endpoint.EndpointTest" time="0.0"/>
+  <testcase name="testErrorHandling()" classname="itmo.is.endpoint.EndpointTest" time="0.001"/>
+  <testcase name="testLocationEndpoints()" classname="itmo.is.endpoint.EndpointTest" time="0.001"/>
   <system-out><![CDATA[Testing CORS headers:
 Access-Control-Allow-Origin should be set
 Access-Control-Allow-Methods should include GET, POST, PUT, DELETE

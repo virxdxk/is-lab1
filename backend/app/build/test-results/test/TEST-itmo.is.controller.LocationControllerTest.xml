@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="itmo.is.controller.LocationControllerTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-10-10T22:02:47.961Z" hostname="MacBook-Pro-Konstantin.local" time="0.418">
+<testsuite name="itmo.is.controller.LocationControllerTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-10-10T22:27:14.923Z" hostname="MacBook-Pro-Konstantin.local" time="0.419">
   <properties/>
-  <testcase name="testDeleteLocation_Success()" classname="itmo.is.controller.LocationControllerTest" time="0.402"/>
+  <testcase name="testDeleteLocation_Success()" classname="itmo.is.controller.LocationControllerTest" time="0.403"/>
   <testcase name="testUpdateLocation_Success()" classname="itmo.is.controller.LocationControllerTest" time="0.003"/>
   <testcase name="testDeleteLocation_NotFound()" classname="itmo.is.controller.LocationControllerTest" time="0.002"/>
   <testcase name="testGetLocationById_Success()" classname="itmo.is.controller.LocationControllerTest" time="0.002"/>

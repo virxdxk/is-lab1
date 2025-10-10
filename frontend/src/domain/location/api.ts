@@ -8,9 +8,23 @@ const api = axios.create({
 export const locationApi = {
     async getAllLocations(): Promise<Location[]> {
         try {
+            console.log("Making request to:", api.defaults.baseURL + "/locations");
             const response = await api.get("/locations");
+            console.log("Response received:", response.data);
             return response.data;
         } catch (error) {
+            console.error("getAllLocations error:", error);
+            if (axios.isAxiosError(error)) {
+                console.error("Axios error details:", {
+                    message: error.message,
+                    status: error.response?.status,
+                    statusText: error.response?.statusText,
+                    data: error.response?.data,
+                    url: error.config?.url,
+                    baseURL: error.config?.baseURL
+                });
+                throw new Error(`Failed to get locations: ${error.message} (${error.response?.status})`);
+            }
             throw new Error("Failed to get locations");
         }
     },

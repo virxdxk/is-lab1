@@ -7,10 +7,14 @@ import itmo.is.service.RouteService;
 import org.glassfish.hk2.utilities.binding.AbstractBinder;
 
 public class Configuration extends AbstractBinder {
+    
     @Override
     protected void configure() {
+        // Bind DAOs
         bind(RouteDAO.class).to(RouteDAO.class);
         bind(LocationDAO.class).to(LocationDAO.class);
+        
+        // Bind Services
         bind(RouteService.class).to(RouteService.class);
         bind(LocationService.class).to(LocationService.class);
     }
